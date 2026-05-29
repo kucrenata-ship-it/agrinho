@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projeto Agrinho - Programação</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f9f4;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#2e7d32,#66bb6a);
+      color:white;
+      padding:40px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:1.2rem;
+    }
+
+    nav{
+      background:#1b5e20;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#c8e6c9;
+    }
+
+    .hero{
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    .hero h2{
+      font-size:2.5rem;
+      color:#2e7d32;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      max-width:800px;
+      margin:auto;
+      font-size:1.1rem;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      padding:40px 20px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      padding:25px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h3{
+      color:#2e7d32;
+      margin-bottom:15px;
+    }
+
+    .galeria{
+      padding:40px 20px;
+      text-align:center;
+    }
+
+    .galeria h2{
+      margin-bottom:20px;
+      color:#2e7d32;
+    }
+
+    .imagens{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:15px;
+    }
+
+    .imagens img{
+      width:100%;
+      border-radius:12px;
+      height:200px;
+      object-fit:cover;
+    }
+
+    footer{
+      background:#1b5e20;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+    }
+
+    button{
+      margin-top:20px;
+      padding:12px 25px;
+      border:none;
+      background:#2e7d32;
+      color:white;
+      border-radius:8px;
+      cursor:pointer;
+      font-size:1rem;
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:#1b5e20;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Projeto Agrinho</h1>
+    <p>Tecnologia, Educação e Programação para o Futuro</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#programacao">Programação</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section class="hero" id="sobre">
+    <h2>O que é o Projeto Agrinho?</h2>
+    <p>
+      O Projeto Agrinho incentiva a educação, sustentabilidade,
+      tecnologia e cidadania. Nesta página, mostramos como a
+      programação pode ajudar no desenvolvimento do campo e da cidade,
+      criando soluções modernas para a sociedade.
+    </p>
+
+    <button onclick="mensagem()">
+      Saiba Mais
+    </button>
+  </section>
+
+  <section class="cards" id="programacao">
+
+    <div class="card">
+      <h3>💻 Programação</h3>
+      <p>
+        A programação ajuda a criar sites, aplicativos e sistemas
+        inteligentes para melhorar a educação e a agricultura.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🌱 Sustentabilidade</h3>
+      <p>
+        A tecnologia pode contribuir para preservar o meio ambiente
+        e promover o uso consciente dos recursos naturais.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🚜 Tecnologia no Campo</h3>
+      <p>
+        Máquinas modernas, sensores e softwares ajudam produtores
+        rurais a aumentarem a produtividade.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="galeria" id="galeria">
+    <h2>Galeria do Projeto</h2>
+
+    <div class="imagens">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop" alt="Agricultura">
+
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Programação">
+
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="Natureza">
+    </div>
+  </section>
+
+  <footer id="contato">
+    <p>
+      © 2026 Projeto Agrinho | Página desenvolvida com HTML, CSS e JavaScript
+    </p>
+  </footer>
+
+  <script>
+    function mensagem(){
+      alert("Bem-vindo ao Projeto Agrinho e ao mundo da Programação!");
+    }
+  </script>
+
+</body>
+</html>
